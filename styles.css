@@ -1,0 +1,108 @@
+html {
+    font-family: Raleway;
+}
+
+/* HEADER CONFIGURATION INFORMATION*/
+
+.header {
+    display: block;
+    width: 99%;
+    background: #333333;
+}
+
+.headingText {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20pt;
+    display: inline-block;
+    color: #333333;
+}
+
+.headerRow {
+    background-color: #333333;
+    width: 100%;
+    text-align: center;
+}
+
+.headerRowText {
+    text-align: left;
+    display: inline-block;
+    font-family: Raleway;
+    font-size: 13pt;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: whitesmoke;
+}
+
+#leftBracket {
+    display: inline-block;
+    
+}
+
+/*GUTS*/
+
+.bodyData {
+    display: block;
+}
+
+.jumboText p {
+    font-family: Raleway;
+    font-size: 50pt;
+    color: #333333;
+    text-align: center;
+}
+
+.jumboText p + .jumboText p {
+    margin-top: 10%;    
+}
+
+#myName {
+    font-size: 50pt;
+    margin-top: 20%;
+}
+
+#profession {
+    line-height: .01em;
+    margin-bottom: 5%;
+}
+
+/*FOOTER CONFIGURATION DATA*/
+
+.footer {
+    text-align: center;
+}
+
+.footerRowText {
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/*FONT DATA*/
+@font-face {
+    font-family: Raleway;
+    src: url("misc/RalewayFont/Raleway-Black.ttf");
+}
+
+/*BACKGROUND*/
+
+html { 
+  background: url(images/siteBackground.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*IMAGE SCALING*/
+
+.footerImage {
+    align-content: center;
+    height: 8em;
+    width: 8em;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
