@@ -7,6 +7,7 @@ html {
 .header {
     display: block;
     width: 99%;
+    margin-bottom: 15%;
 }
 
 .headingText {
@@ -48,17 +49,11 @@ html {
     text-align: center;
 }
 
-.jumboText p + .jumboText p {
-    margin-top: 10%;    
-}
-
-#myName {
+#topBody {
     font-size: 50pt;
-    margin-top: 15%;
-    margin-bottom: 10px;
 }
 
-#profession {
+#bottomBody {
     line-height: .01em;
     margin-bottom: 5%;
     font-family: Raleway-IT;
