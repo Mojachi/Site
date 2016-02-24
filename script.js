@@ -25,7 +25,7 @@ $(document).ready(function(){
             $('#topBody').fadeToggle('slow', function(){
                 if(currentInnerText === "About") {
                     /*Turn this visibility calls into functions*/
-                    updateAndFade("BENJAMIN PINTER", "SOFTWARE DEVELOPER")
+                    updateAndFade("BENJAMIN PINTER", "Software Developer")
                     $('.footer').fadeIn();                                    
                 } else if(currentInnerText === "Contact") {
                     /*Turn this visibility calls into functions*/
