@@ -54,12 +54,15 @@ html {
 
 #myName {
     font-size: 50pt;
-    margin-top: 20%;
+    margin-top: 15%;
+    margin-bottom: 10px;
 }
 
 #profession {
     line-height: .01em;
     margin-bottom: 5%;
+    font-family: Raleway-IT;
+    font-size: 25pt;
 }
 
 /*FOOTER CONFIGURATION DATA*/
@@ -80,6 +83,11 @@ html {
 @font-face {
     font-family: Raleway;
     src: url("misc/RalewayFont/Raleway-inUse.ttf");
+}
+
+@font-face {
+    font-family: Raleway-IT;
+    src: url("misc/RalewayFont/Raleway-Italic.ttf");
 }
 
 /*BACKGROUND*/
