@@ -62,11 +62,11 @@ html {
 
 /*FOOTER CONFIGURATION DATA*/
 
-.footer {
+.links {
     text-align: center;
 }
 
-.footerRowText {
+.linksRowText {
     display: inline-block;
     margin-left: 1%;
     margin-right: 1%;
@@ -97,7 +97,7 @@ html {
 
 /*IMAGE SCALING*/
 
-.footerImage {
+.linksImage {
     align-content: center;
     height: 8em;
     width: 8em;
