@@ -7,7 +7,7 @@ $(document).ready(function(){
             $(this).animate({'opacity':'.5'}, 100);       
         },
         function() {
-            $(this).animate({'opacity':'1'},100)
+            $(this).animate({'opacity':'1'},100);
         }
     );
     
@@ -25,14 +25,14 @@ $(document).ready(function(){
             clearInterval(intervalID);
             $('#bottomBody').fadeOut('fast');
             $('.links').fadeOut('fast');
-
             $('#topBody').fadeToggle('slow', function(){
                 if(currentInnerText === "About") {
-                    FadeOutAndUpdateUpperLowerBodyText("BENJAMIN PINTER", "Software Developer")
+                    FadeOutAndUpdateUpperLowerBodyText("BENJAMIN PINTER", "Software Developer");
                     $('.links').fadeIn();
+                    $('#bottomBody').fadeIn();
                     intervalID =  BeginTitleUpdater();
                 } else if(currentInnerText === "Contact") {
-                    OutAndUpdateUpperLowerBodyText("Contact", "ben.david.pinter@gmail.com");
+                    FadeOutAndUpdateUpperLowerBodyText("Contact", "ben.david.pinter@gmail.com");
                     $('#bottomBody').fadeIn();
                 } else if(currentInnerText === "White Papers") {
                     FadeOutAndUpdateUpperLowerBodyText("White Papers", "Coming Soon!");
@@ -64,13 +64,13 @@ function FadeOutAndUpdateUpperLowerBodyText (newTopBody, newBottomBody) {
 };
         
 function updateElementText (directive, newText) {
-    $(directive).html(newText)
+    $(directive).html(newText);
 };
 
 
 function BeginTitleUpdater(){
     var i = 0;
-    return setInterval(function() {$('#bottomBody').fadeToggle("slow", function() {
+    var returnVal = setInterval(function() {$('#bottomBody').fadeToggle("slow", function() {
         i++;
         if(i >= titles.length){
             i = 0;
@@ -82,6 +82,8 @@ function BeginTitleUpdater(){
         }
 
     })}, 3000);
+
+    return returnVal;
 }
 
 
